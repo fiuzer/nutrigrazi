@@ -1,0 +1,20 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder elegante para retrato da nutricionista">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="760" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6ECE4"/>
+      <stop offset="1" stop-color="#EAD9CD"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(620 210) rotate(117) scale(360 260)">
+      <stop stop-color="#D6B2A2" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#D6B2A2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="8" y="8" width="884" height="1184" rx="56" fill="url(#bg)" stroke="#D9C1B2" stroke-width="16"/>
+  <rect x="138" y="190" width="624" height="825" rx="290" fill="#F8F3EE"/>
+  <path d="M278 556C278 437.261 374.261 341 493 341H508C626.739 341 723 437.261 723 556V861H278V556Z" fill="#D2B1A2"/>
+  <ellipse cx="500" cy="431" rx="147" ry="175" fill="#EAC9B7"/>
+  <path d="M343 410C343 300.647 431.647 212 541 212H550C659.353 212 748 300.647 748 410V465H343V410Z" fill="#8A5F4F"/>
+  <rect x="238" y="901" width="535" height="78" rx="39" fill="#F1E6DD"/>
+  <text x="507" y="949" text-anchor="middle" fill="#4B3A33" font-family="Georgia, serif" font-size="30" letter-spacing="2">FOTO DA PROFISSIONAL</text>
+  <circle cx="619" cy="218" r="233" fill="url(#glow)"/>
+</svg>

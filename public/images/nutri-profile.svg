@@ -1,0 +1,20 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder de retrato profissional para nutricionista">
+  <defs>
+    <linearGradient id="bg2" x1="120" y1="60" x2="720" y2="1130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EE"/>
+      <stop offset="1" stop-color="#E5EDE3"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 250) rotate(60) scale(260 260)">
+      <stop stop-color="#E2C8BB" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#E2C8BB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="8" y="8" width="884" height="1184" rx="56" fill="url(#bg2)" stroke="#CFC0B6" stroke-width="16"/>
+  <rect x="155" y="188" width="590" height="840" rx="310" fill="#F3ECE6"/>
+  <ellipse cx="450" cy="406" rx="138" ry="172" fill="#E8C6B4"/>
+  <path d="M308 545C308 454.977 380.977 382 471 382H474C564.023 382 637 454.977 637 545V858H308V545Z" fill="#B98978"/>
+  <path d="M319 419C319 307.512 409.512 217 521 217C632.488 217 723 307.512 723 419V472H319V419Z" fill="#654E46"/>
+  <path d="M208 920H694" stroke="#D1C1B4" stroke-width="5" stroke-linecap="round"/>
+  <text x="451" y="968" text-anchor="middle" fill="#4B3A33" font-family="Georgia, serif" font-size="30" letter-spacing="1.6">INSIRA FOTO REAL AQUI</text>
+  <circle cx="248" cy="257" r="220" fill="url(#orb)"/>
+</svg>
