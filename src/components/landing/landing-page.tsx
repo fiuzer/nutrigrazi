@@ -1,11 +1,19 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 import { faqs, metrics, pillars, testimonials } from "@/lib/landing-content";
 
 const testUrl = "https://form.respondi.app/Q24DdzrD";
 const whatsappUrl =
   "https://api.whatsapp.com/send/?phone=5511944336718&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.%20Quais%20s%C3%A3o%20os%20hor%C3%A1rios%20dispon%C3%ADveis?";
+  function trackWhatsAppClick(location: string) {
+  if (typeof window !== "undefined" && window.dataLayer) {
+    window.dataLayer.push({
+      event: "whatsapp_click",
+      whatsapp_location: location,
+    });
+  }
+}
 
 const serviceSchema = {
   "@type": "MedicalBusiness",
@@ -134,6 +142,7 @@ export function LandingPage() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick("header")}
               className="rounded-full bg-sage-500 px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-clay-700"
             >
               Agende sua consulta
@@ -170,6 +179,7 @@ export function LandingPage() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick("hero")}
                     className="rounded-full bg-sage-500 px-8 py-4 text-center font-bold uppercase tracking-[0.14em] text-white transition hover:scale-[1.03] hover:bg-clay-700"
                   >
                     Agende sua consulta
@@ -371,6 +381,7 @@ export function LandingPage() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick("cta_final")}
                   className="rounded-full bg-sage-500 px-12 py-5 text-lg font-bold uppercase tracking-[0.14em] text-white shadow-xl transition hover:scale-[1.03] hover:bg-clay-700"
                 >
                   Agende sua consulta agora
@@ -447,6 +458,7 @@ export function LandingPage() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("floating_button")}
           className="fixed bottom-8 right-8 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition hover:scale-110 hover:bg-[#1ebe5d] lg:bottom-12 lg:right-12"
           aria-label="Ir para contato pelo WhatsApp"
         >
